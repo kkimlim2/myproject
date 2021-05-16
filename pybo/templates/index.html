@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <h2>뮤</h2>
+    <div class="subjects">
+    <div class="subject" id="theater">
+        <ul>
+            {% for theater in theater_list %}
+                <li>{{theater}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="subject" id="titles">
+        <ul>
+            {% for title in title_list %}
+                <li>
+                    <div class="title"><button class="detailed" id = "{{title}}">
+                        <img class=play src="{{url_for('static',filename='캡처.PNG')}}">
+                    </button></div>
+                    <div class="title">{{title}}</div>
+                </li>
+                <ul id="{{title}} casting" style="display:none">
+                    {% for actor in option[title] %}
+                        <a  href="/review/{{title}}/{{actor}}"><li>{{actor}}</li></a>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+</body>
+<script src="{{url_for('static',filename='index.js')}}"></script>
+</html>

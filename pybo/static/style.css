@@ -1,0 +1,37 @@
+h2{
+    text-align:center;
+    text-decoration: underline;
+    color: coral;
+}
+ul{
+    list-style-type: none;
+}
+button{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+a{
+    color: blue;
+}
+.play{
+    width:20px;
+}
+.subjects{
+    text-align:center;
+}
+.subject{
+    display: inline-block;
+    text-align:left;
+}
+#titles{
+    border-left: 2px solid gray;
+    padding: 10px;
+}
+#theater{
+    padding:10px;
+}
+.title{
+    display: inline-block;
+};
+
