@@ -10,7 +10,7 @@ class Review(db.Model):
     # (극장, 좌석)이 세트로 묶어서 입력할 것
     seat = db.Column(db.String(50), nullable=False)
     content = db.Column(db.Text(), nullable=False)
-    create_date = db.Column(db.DateTime(), nullable=False)
+    create_date = db.Column(db.String(16), nullable=False)
 
 
 #나중에 seat를 db.relationship으로 바꿔야 할지도 모르겠으나 그냥 패스

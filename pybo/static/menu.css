@@ -1,0 +1,40 @@
+h2{
+    text-decoration: underline;
+}
+#content-box{
+    border-left-style: solid;
+    border-width: thick;
+    border-color: #48b248;
+    padding: 10px;
+    margin: 100px;
+}
+#content{
+    margin: 100px;
+}
+#menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#menu a{
+    display: block;
+    color: gray;
+    padding: 8px 8px 8px 32px;
+    text-align: center;
+}
+#menu a:hover{
+    color: white;
+}
+#button{
+    background: none;
+    border: none;
+    padding: 10px;
+}
+

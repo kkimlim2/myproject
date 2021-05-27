@@ -1,0 +1,13 @@
+{% extends "review.html" %}
+{% block content %}
+<div id="info">
+    {% for x in info %}
+    <p>{{x}}</p>
+    {% endfor %}
+</div>
+<div id = "content-box">
+    {% for line in content %}
+    <p>{{line}}</p>
+    {% endfor %}
+</div>
+{% endblock %}

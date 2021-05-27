@@ -24,6 +24,3 @@ def index():
 
     return render_template('index.html', theater_list=theater_list, title_list=title_list, option=option)
 
-@bp.route('/review/')
-def review():
-    return redirect(url_for("review.review"))

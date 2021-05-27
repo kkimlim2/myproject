@@ -6,19 +6,17 @@ h2{
 ul{
     list-style-type: none;
 }
-button{
-    border: 0;
-    outline: 0;
-    background-color: transparent;
+p{
+    text-align: center;
 }
-a{
-    color: blue;
-}
+
 .play{
     width:20px;
 }
 .subjects{
     text-align:center;
+    padding: 10px;
+    padding-bottom: 20px;
 }
 .subject{
     display: inline-block;
@@ -34,4 +32,3 @@ a{
 .title{
     display: inline-block;
 };
-

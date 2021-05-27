@@ -7,6 +7,7 @@ import config
 db = SQLAlchemy()
 migrate = Migrate()
 
+
 def create_app():
     app = Flask(__name__)
 
@@ -17,8 +18,9 @@ def create_app():
 
     from . import models
 
-    from .views import main_views,re_view
+    from .views import main_views, re_view, write
     app.register_blueprint(main_views.bp)
     app.register_blueprint(re_view.bp)
+    app.register_blueprint(write.bp)
 
     return app

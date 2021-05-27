@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form action="{{url_for('write.submit')}}" method="post">
+      <div>
+          <label for="title">title</label>
+          <textarea name="title" id="title"></textarea>
+      </div>
+      <div>
+          <label for="actor">actors</label>
+          <textarea name="actor" id="actor"></textarea>
+      </div>
+      <div>
+          <label for="role">roles</label>
+          <textarea name="role" id="role"></textarea>
+      </div>
+      <div>
+          <label for="seat">seat(극장, 좌석) 형식으로 적어주세요 </label>
+          <textarea name="seat" id="seat"></textarea>
+      </div>
+      <div>
+          <label for="content">content</label>
+          <textarea name="content" id="content"></textarea>
+      </div>
+      <div>
+          <label for="date">date yyyy-mm-dd--hh 형식으로 적어주세요</label>
+          <textarea name="date" id="date"></textarea>
+      </div>
+      <input onclick=alert("submitted") type="submit"/>
+  </form>
+</body>
+</html>
